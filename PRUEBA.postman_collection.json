@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "8d137295-57e4-4db5-a3e5-d2025a1279ff",
+		"name": "PRUEBA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11452201",
+		"_collection_link": "https://warped-zodiac-553157.postman.co/workspace/Team-Workspace~972d9527-db82-433a-8c26-585728b305c6/collection/11452201-8d137295-57e4-4db5-a3e5-d2025a1279ff?action=share&source=collection_link&creator=11452201"
+	},
+	"item": [
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Evento de Prueba\",\r\n    \"tipoevento\": \"Conferencia\",\r\n    \"participanteid\": 1,\r\n    \"fechaevento\": \"2024-12-27\",\r\n    \"lugar\": \"Auditorio Principal\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/eventos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"eventos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"eventoId\": 1,\r\n    \"nombre\": \"Evento de Prueba\",\r\n    \"tipoevento\": \"Conferencia\",\r\n    \"participanteid\": 1,\r\n    \"fechaevento\": \"2024-12-27\",\r\n    \"lugar\": \"Auditorio Principal\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/eventos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"eventos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"eventoId\": 1,\r\n    \"nombre\": \"Evento de Prueba\",\r\n    \"tipoevento\": \"Conferencia\",\r\n    \"participanteid\": 1,\r\n    \"fechaevento\": \"2024-12-27\",\r\n    \"lugar\": \"Auditorio Principal\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/eventos/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"eventos",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/eventos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"eventos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET PARAM",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/eventos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"eventos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
